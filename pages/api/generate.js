@@ -7,11 +7,9 @@ const bufferToBase64 = (buffer) => {
 };
 
 const baseInput =
-  "intricate character portrait, intricate, beautiful, 8k resolution, dynamic lighting, hyperdetailed, quality 3D rendered, volumetric lighting, greg rutkowski, detailed background, artstation character portrait, dnd character portrait";
+  "intricate character portrait, intricate, beautiful, 8k resolution, dynamic lighting, hyperdetailed, quality 3D rendered, volumetric lighting, detailed background, artstation";
 
 const generateAction = async (req, res) => {
-  console.log("Received request");
-
   const input = JSON.parse(req.body).input;
 
   // Add fetch request to Hugging Face
